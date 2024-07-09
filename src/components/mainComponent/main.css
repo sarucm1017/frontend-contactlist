@@ -1,0 +1,211 @@
+.maincontainer {
+    width: 100%;
+    background-color: #e8f3f3;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    min-height: 99.85vh;
+   
+}
+.container{
+    width: 95%;
+    margin: 0   auto;
+    min-height: 50vh;
+}
+.bodyHead{
+    text-align: center;
+    margin: 0;
+    padding-top: 13px;
+}
+.bodySection{
+    margin: 20px 0;
+    display: grid;
+    text-align: left;
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    min-height: 50vh;
+    align-items: center;
+}
+thead{
+    color: #3e3a34;
+    background-color: #d8ebeb;
+}
+.rightSide{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+}
+.btn{
+    border: none;
+    background-color: #1e1ec9;
+    padding: 10px 20px;
+    border-radius: 12px;
+    color: white;
+    width: 130px;
+    cursor: pointer;
+}
+.searchbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10px;
+    align-items: center;
+}
+.searchbarInput{
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.formContainer{
+    width: 42%;
+    border-radius: 13px;
+    position: absolute;
+    left: 345px;
+    top: 125px;
+    background-color: white;
+    z-index: 2;
+    padding: 28px 10px;
+}
+.mainForm{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+.overlay{
+    background: rgba(5,3,16,0.80);
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    position: fixed;
+    z-index: 1;
+}
+label{
+    padding: 10px  0;
+}
+input{
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid;
+}
+
+.submitBtn{
+    display: flex;
+    justify-content: center;
+    padding: 10px 10px;
+}
+.top{
+    display: flex;
+    justify-content: space-between;
+}
+.closebtn{
+    padding: 12px;
+    height: 37px;
+    border: none;
+    border-radius: 10px;
+    background-color: red;
+    cursor: pointer;
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+td , th{
+    border: 1px solid;
+    padding: 8px;
+    text-align: center;
+}
+tr{
+    height: 45px !important;
+}
+table{
+    width: 100%;
+}
+
+.contact_action{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.deleteContainer{
+    width: 35%;
+    border-radius: 13px;
+    position: absolute;
+    left: 390px;
+    top: 125px;
+    background-color: white;
+    z-index: 2;
+    padding: 28px 10px;
+}
+.rightBtn{
+    display: flex;
+    justify-content: space-between;
+}
+.deleteContent{
+    text-align: center;
+}
+.deleteBtn{
+    padding: 15px;
+    margin: 15px;
+    border: none;
+    border-radius: 10px;
+    background-color: #308b20;
+    cursor: pointer;
+}
+.deleteBtn.confirm{
+    padding: 15px 25px !important;
+    background-color: rgb(248, 32, 32) !important;
+    color: rgb(0, 0, 0) !important;
+}
+.deleteText{
+    padding-left: 140px
+}
+.closebtn.close{
+    padding: 12px !important;
+}
+.subContainer{
+    margin: 0 20px;
+}
+.totalCount{
+    display: flex;
+    align-items: center;
+}
+.entries{
+    margin-right: 10px;
+}
+.showlist{
+    margin-right: 10px;
+}
+.totalText{
+    margin-right: 10px;
+}
+.pagination{
+    align-items: center;
+}
+.loading{
+    position: fixed;
+    margin-top: 35px;
+}
+.contact_btn{
+    padding: 12px;
+    border: none;
+    border-radius: 19px;
+    cursor: pointer;
+}
+.lastcolumn{
+    width: 15%;
+}
+.paginate_btn{
+    padding: 10px 10px;
+}
+.pagination{
+    padding: 10px 0;
+    display: flex;
+    gap: 5px;
+}
+
+
+
