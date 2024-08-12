@@ -6,7 +6,7 @@ export const getAllContact = createAsyncThunk(
   async ({ searchQuery, currentPage, pageSize }) => {
     try {
       const response = await axios.get(
-        `http://localhost:5001/contact/?searchQuery=${searchQuery}&currentPage=${currentPage}&pageSize=${pageSize}`
+        `https://contactlist-back-end.onrender.com/contact/?searchQuery=${searchQuery}&currentPage=${currentPage}&pageSize=${pageSize}`
       );
       return response.data;
     } catch (error) {
@@ -20,7 +20,7 @@ export const addContact = createAsyncThunk(
   async (formData, { rejectWithValue }) => {
     try {
       const response = await axios.post(
-        "http://localhost:5001/contact",
+        "https://contactlist-back-end.onrender.com/contact",
         formData
       );
       return response.data;
@@ -32,7 +32,7 @@ export const addContact = createAsyncThunk(
 
 export const getContactById = createAsyncThunk("getContactById", async (id) => {
   try {
-    const response = await axios.get(`http://localhost:5001/contact/${id}`);
+    const response = await axios.get(`https://contactlist-back-end.onrender.com/contact/${id}`);
     return response.data;
   } catch (error) {
     throw error;
@@ -44,7 +44,7 @@ export const updateContact = createAsyncThunk(
   async ({ id, formData }, { rejectWithValue }) => {
     try {
       const response = await axios.put(
-        `http://localhost:5001/contact/${id}`,
+        `https://contactlist-back-end.onrender.com/contact/${id}`,
         formData
       );
       return response.data;
@@ -59,7 +59,7 @@ export const deleteContact = createAsyncThunk(
   async (id) => {
     try {
       const response = await axios.delete(
-        `http://localhost:5001/contact/${id}`
+        `https://contactlist-back-end.onrender.com/contact/${id}`
       );
       console.log(response.data);
       return id;
